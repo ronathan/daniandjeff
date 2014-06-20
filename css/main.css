@@ -1,0 +1,52 @@
+* {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'CAC Champagne';
+	src:url(../fonts/cac_champagne.ttf);
+}
+@font-face {
+	font-family: 'Castro Script';
+	src:url(../fonts/CastroScript.ttf);
+}
+body {
+	font-size:14px;
+	font-family:"CAC Champagne";
+	font-weight:400;
+}
+h1 {
+	font-size:5em;
+	margin:10px 0;
+  font-weight:500;
+}
+h2 {
+	font-size:3em;
+	margin:0;
+	font-weight:200;
+}
+section#main-page {
+	height:100%;
+	background-image:url(../images/main-splash.jpg);
+	background-attachment:fixed;
+	background-position:top center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.main-page-filter {
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:rgba(255,255,255, 0.6);
+}
+.main-page-text {
+	position:absolute; 
+	width:100%; 
+	height:auto; 
+	bottom:40px; 
+	background-color:rgba(255,255,255, 0.3); 
+	padding-top:1em; 
+	padding-bottom: 2em;
+	opacity:0;
+}
