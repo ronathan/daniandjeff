@@ -15,6 +15,8 @@ body {
 	font-size:14px;
 	font-family:"CAC Champagne";
 	font-weight:400;
+	top:0;
+	left:0;
 }
 h1 {
 	font-size:5em;
@@ -27,7 +29,37 @@ h2 {
 	font-weight:200;
 }
 section#main-page {
+	position:relative;
 	height:100%;
+	top:0;
+	left:0;
+}
+section#main-page #navbar {
+	height:80px;
+}
+#navbar ul {
+	list-style: none;
+	margin:0 auto;
+	padding:30px;
+	height:100%;
+	width:80%;
+}
+#navbar ul li {
+	float:left;
+	height:20px;
+	width:25%;
+	font-size:1.5em;
+	font-family:Arial;
+	text-align:center;
+	cursor:pointer;
+}
+#navbar ul li:hover {
+	color:#E6E6E6;
+}
+#main-page .main-page-background {
+	display:block;
+	position:relative;
+	height:80%;
 	background-image:url(../images/main-splash.jpg);
 	background-attachment:fixed;
 	background-position:top center;
@@ -38,6 +70,8 @@ section#main-page {
 	position:absolute;
 	height:100%;
 	width:100%;
+	top:0;
+	left:0;
 	background-color:rgba(255,255,255, 0.6);
 }
 .main-page-text {
@@ -45,8 +79,8 @@ section#main-page {
 	width:100%; 
 	height:auto; 
 	bottom:40px; 
+	color:#363636;
 	background-color:rgba(255,255,255, 0.3); 
-	padding-top:1em; 
-	padding-bottom: 2em;
+	padding:0.5em auto;
 	opacity:0;
 }
