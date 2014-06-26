@@ -8,23 +8,30 @@
 	src:url(../fonts/cac_champagne.ttf);
 }
 @font-face {
-	font-family: 'Castro Script';
-	src:url(../fonts/CastroScript.ttf);
+	font-family: 'Coneria Script';
+	src:url(../fonts/ConeriaScript.ttf);
+}
+@font-face {
+	font-family: 'Linux Biolinum';
+	/*src:url(../fonts/LinBiolinum_aSI.ttf);*/
 }
 body {
 	font-size:14px;
-	font-family:"CAC Champagne";
+	font-family: Linux Biolinum;
 	font-weight:400;
+	font-style:italic;
 	top:0;
 	left:0;
 }
 h1 {
+	font-family:"Coneria Script";
 	font-size:5em;
 	margin:10px 0;
-  font-weight:500;
+	margin-bottom:20px;
+  font-weight:300;
 }
 h2 {
-	font-size:3em;
+	font-size:2em;
 	margin:0;
 	font-weight:200;
 }
@@ -35,7 +42,7 @@ section#main-page {
 	left:0;
 }
 section#main-page #navbar {
-	height:80px;
+	height:10%;
 }
 #navbar ul {
 	list-style: none;
@@ -48,10 +55,12 @@ section#main-page #navbar {
 	float:left;
 	height:20px;
 	width:25%;
-	font-size:1.5em;
+	font-size:1.9em;
 	font-family:Arial;
 	text-align:center;
 	cursor:pointer;
+	font-family:"CAC Champagne";
+	font-weight:200;
 }
 #navbar ul li:hover {
 	color:#E6E6E6;
@@ -78,6 +87,7 @@ section#main-page #navbar {
 	position:absolute; 
 	width:100%; 
 	height:auto; 
+	padding:20px;
 	bottom:40px; 
 	color:#363636;
 	background-color:rgba(255,255,255, 0.3); 

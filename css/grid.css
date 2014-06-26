@@ -15,7 +15,7 @@ html, body, .container {
 /* STANDARD BROWSERS*/
 @media (min-width: 400px) {
 	/* Columns */
-	.grid-container > [class^="grid-"] {
+	.clearfix, .grid-container > [class^="grid-"] {
 		position:relative;
 		float:left;
 		min-height:1px; /* Prevents the columns from collapsing */
