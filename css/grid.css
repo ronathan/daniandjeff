@@ -9,6 +9,7 @@ html, body, .container {
 	margin: 0 auto;
 	width:100%;
 	height:800px; /* fixed height for sections */
+	min-height:800px;
 	position:relative;
 }
 

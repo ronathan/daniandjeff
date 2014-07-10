@@ -70,6 +70,7 @@ section#main-page #navbar {
 	display:block;
 	position:relative;
 	height:80%;
+	min-height:600px;
 	background-image:url(../images/main-splash.jpg);
 	background-attachment:fixed;
 	background-position:top center;
@@ -94,4 +95,92 @@ section#main-page #navbar {
 	background-color:rgba(255,255,255, 0.3); 
 	padding:0.5em auto;
 	opacity:0;
+}
+
+/* Photo slider CSS */
+.jcarousel-wrapper {
+	position:relative;
+	margin:0 auto;
+	height:620px;
+	width:420px;
+  border:1px solid #EFEFEF;
+  padding:10px;
+  -moz-box-shadow: 0 0 20px #ccc;
+	-webkit-box-shadow: 0 0 20px #ccc;
+	box-shadow: 0 0 20px #ccc;
+}
+.jcarousel-wrapper .jcarousel {
+  position: absolute;
+  overflow: hidden;
+  height:600px;
+  width:400px;
+}
+.jcarousel-wrapper .jcarousel ul {
+  position: relative;
+  overflow:hidden;
+	width:2000em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.jcarousel-wrapper .jcarousel ul li {
+	position:relative;
+	float: left;
+	height:600px;
+	width:400px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.jcarousel-wrapper .jcarousel #slider1 {
+	background-image:url(../images/slider1.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider2 {
+	background-image:url(../images/slider2.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider3 {
+	background-image:url(../images/slider3.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider4 {
+	background-image:url(../images/slider4.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider5 {
+	background-image:url(../images/slider5.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider6 {
+	background-image:url(../images/slider6.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider7 {
+	background-image:url(../images/slider7.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider8 {
+	background-image:url(../images/slider8.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider9 {
+	background-image:url(../images/slider9.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider10 {
+	background-image:url(../images/slider10.jpg);
+}
+.jcarousel-wrapper .jcarousel #slider11 {
+	background-image:url(../images/slider11.jpg);
+}
+.jcarousel-wrapper .slider-arrow {
+	position:absolute;
+	height:50px;
+	width:25px;
+	cursor:pointer;
+	background-color:#FFF;
+	background-repeat:no-repeat;
+}
+.jcarousel-wrapper #left-slider-arrow {
+	top:50%;
+	left:-60px;
+	margin-top:-25px;
+	background-image:url(../images/icon-arrow-left.png);
+}
+.jcarousel-wrapper #right-slider-arrow {
+	top:50%;
+	right:-60px;
+	margin-top:-25px;
+	background-image:url(../images/icon-arrow-right.png);
 }
