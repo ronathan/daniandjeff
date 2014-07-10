@@ -15,10 +15,10 @@
 		<section id="main-page" class="grid-container">
 			<div id="navbar">
 				<ul>
-					<li>Our Story</li>
-					<li>Photos</li>
-					<li>Wedding Details</li>
-					<li>Contact</li>
+					<li data-sectionNumber="1">Our Story</li>
+					<li id="photosNav" data-sectionNumber="2">Photos</li>
+					<li data-sectionNumber="3">Wedding Details</li>
+					<li data-sectionNumber="4">Contact</li>
 				</ul>
 			</div>
 
@@ -37,8 +37,8 @@
 
 		</section>
 
-<!-- 		<section id="our-story" class="grid-container">
-		</section> -->
+		<section id="our-story" class="grid-container">
+		</section>
 
 		<section id="photos" class="grid-container">
 
@@ -57,6 +57,7 @@
 						<li id="slider9"></li>
 						<li id="slider10"></li>
 						<li id="slider11"></li>
+						<li id="slider12"></li>
 					</ul>
 				</div>
 
@@ -65,6 +66,10 @@
 				<div id="left-slider-arrow" class="slider-arrow">
 				</div>
 				<div id="right-slider-arrow" class="slider-arrow">
+				</div>
+
+				<!-- Pagination -->
+				<div class="jcarousel-pagination">
 				</div>
 
 			</div>
@@ -81,7 +86,8 @@
 		</section> -->
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/jcarousel.js"></script>
 	<script src="js/main.js"></script>
