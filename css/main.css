@@ -19,38 +19,69 @@ body {
 	font-size:14px;
 	font-family: Linux Biolinum;
 	font-weight:400;
-	font-style:italic;
+	font-style:normal;
 	top:0;
 	left:0;
 }
 h1 {
 	position:relative;
 	font-family:"Coneria Script";
-	font-size:4em;
+	font-size:3em;
 	margin:10px 0;
 	margin-bottom:20px;
   font-weight:300;
   text-align:center;
 	padding-top:50px;
 }
-section#main-page h1 {
-	font-size:5em;
-	margin:0;
-	padding-top:0px;
+h1:after {
+	content: '';
+  width: 33%;
+  position: absolute;
+  left:33%;
+  bottom: 10px;
+  border-width: 0 0 1px;
+  border-style: solid;
 }
 h2 {
 	font-size:2em;
 	margin:0;
 	font-weight:200;
 }
+section {
+	/* Adds padding to top for navbar */
+	padding-top:50px;
+}
 section#main-page {
 	position:relative;
 	height:100%;
 	top:0;
 	left:0;
+	padding-top:0px;
+}
+section#main-page h1 {
+	font-size:5em;
+	margin:0;
+	margin-bottom:5px;
+	padding-top:0px;
+}
+section#main-page h1:after {
+  width: 50%;
+  left:25%;
+  bottom: 20px;
+}
+section#main-page h2 {
+	font-style:italic;
+	margin-top:-15px;
 }
 section#main-page #navbar {
 	height:50px;
+}
+#navbar {
+	width:100%;
+	background-color:rgba(255,255,255, 0.9);
+	border-bottom:1px solid #B2B2B2;
+	z-index:10;
+	opacity:0;
 }
 #navbar ul {
 	list-style: none;
@@ -77,13 +108,18 @@ section#main-page #navbar {
 #main-page .main-page-background {
 	display:block;
 	position:relative;
-	height:70%;
+	height:80%;
 	min-height:500px;
 	background-image:url(../images/main-splash.jpg);
 	background-attachment:fixed;
 	background-position:top center;
 	background-repeat:no-repeat;
 	background-size:cover;
+	border-top:1px solid #B2B2B2;
+	border-bottom:1px solid #B2B2B2;
+	-moz-box-shadow: 0 0 10px #B2B2B2;
+	-webkit-box-shadow: 0 0 10px #B2B2B2;
+	box-shadow: 0 0 10px #B2B2B2;
 }
 .main-page-filter {
 	position:absolute;
@@ -98,32 +134,39 @@ section#main-page #navbar {
 	width:100%; 
 	height:auto; 
 	padding:20px;
+	padding-top:40px;
 	bottom:40px; 
 	color:#363636;
 	background-color:rgba(255,255,255, 0.3); 
 	padding:0.5em auto;
+	border-top:1px solid #B2B2B2;
+	border-bottom:1px solid #B2B2B2;
 	opacity:0;
 }
 
 /* Our Story */
 #our-story {
-	height:2000px !important;
-	background-color:#E99B9F;
+	height:1000px !important;
+	background-color:#F7DEDE;
 }
 #our-story h1 {
-	color:#FFF0AA;
+	/*color:#FFF0AA;*/
+	color:#FF0080;
 	text-align:center;
 }
 
 /* Photo slider CSS */
+/*#photos {
+	background-color:#F8F9FB;
+}*/
 #photos h1 {
-	color:#2FA7FC;
+	color:#00B1B0;
 }
 .jcarousel-wrapper {
 	position:relative;
 	margin:0 auto;
-	height:620px;
-	width:420px;
+	height:520px;
+	width:353px;
   border:1px solid #EFEFEF;
   padding:10px;
   -moz-box-shadow: 0 0 20px #ccc;
@@ -133,8 +176,8 @@ section#main-page #navbar {
 .jcarousel-wrapper .jcarousel {
   position: absolute;
   overflow: hidden;
-  height:600px;
-  width:400px;
+  height:500px;
+  width:333px;
 }
 .jcarousel-wrapper .jcarousel ul {
   position: relative;
@@ -147,8 +190,8 @@ section#main-page #navbar {
 .jcarousel-wrapper .jcarousel ul li {
 	position:relative;
 	float: left;
-	height:600px;
-	width:400px;
+	height:500px;
+	width:333px;
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -232,14 +275,48 @@ section#main-page #navbar {
 	font-style:normal;
 }
 .jcarousel-pagination a.active {
-	background:#2FA7FC;
+	background:#00B1B0;
 }
 
 /* Wedding Details */
 #wedding-details {
-	background-color:#2FA7FC;
+	/*background-color:rgba(42,191,255, 0.3);*/
+	/*background-color:#D9F2FD;*/
+	background-color:#F8F9FB;
 }
 
 #wedding-details h1 {
-	color:#FFFFFF;
+	color:#4DE0FF;
+}
+#wedding-details .grid-5 {
+	margin-left:8%; 
+	margin-top:50px;
+	height:400px;
+	padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  box-shadow(0 1px 3px rgba(0,0,0,.1));
+}
+#wedding-details .grid-6 {
+	margin-top:50px;
+	padding:0 30px;
+}
+#wedding-details .grid-6 h2 {
+	text-align:left;
+	font-style:normal;
+	margin:0;
+	padding:0;
+	font-size:2em;
+	font-weight:100;
+	color:#FFC11F;
+}
+#wedding-details .grid-6 h3 {
+	font-style:italic;
+	font-weight:100;
+	margin:0;
+}
+#wedding-details #map-canvas {
+	height:100%;
+	width:100%;
 }

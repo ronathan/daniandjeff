@@ -1,5 +1,17 @@
 $(function(){
 
+	// Animate navbar in
+	var $ourStory = $('section#our-story'),
+	$navbar = $('#navbar');
+
+	$ourStory.waypoint(function(direction) {
+		if(direction == "down") {
+			$navbar.animate({opacity: "1"}, 200, "easeInOutExpo");
+		} else {
+			$navbar.animate({opacity: "0"}, 200, "easeInOutExpo");
+		}
+	}, { offset:100 });
+
 	// Navbar Scroll Animations
 	$('#navbar ul li').click(function() {
 		var $section = $('section');
