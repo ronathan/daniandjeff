@@ -156,9 +156,9 @@ section#main-page #navbar {
 }
 
 /* Photo slider CSS */
-/*#photos {
-	background-color:#F8F9FB;
-}*/
+#photos {
+	background-color:#F5E8E5;
+}
 #photos h1 {
 	color:#00B1B0;
 }
@@ -167,6 +167,7 @@ section#main-page #navbar {
 	margin:0 auto;
 	height:520px;
 	width:353px;
+  background-color:#FFF;
   border:1px solid #EFEFEF;
   padding:10px;
   -moz-box-shadow: 0 0 20px #ccc;
@@ -282,7 +283,7 @@ section#main-page #navbar {
 #wedding-details {
 	/*background-color:rgba(42,191,255, 0.3);*/
 	/*background-color:#D9F2FD;*/
-	background-color:#F8F9FB;
+	background-color:#FFFFFF;
 }
 
 #wedding-details h1 {
