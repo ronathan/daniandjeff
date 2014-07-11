@@ -24,11 +24,19 @@ body {
 	left:0;
 }
 h1 {
+	position:relative;
 	font-family:"Coneria Script";
-	font-size:5em;
+	font-size:4em;
 	margin:10px 0;
 	margin-bottom:20px;
   font-weight:300;
+  text-align:center;
+	padding-top:50px;
+}
+section#main-page h1 {
+	font-size:5em;
+	margin:0;
+	padding-top:0px;
 }
 h2 {
 	font-size:2em;
@@ -69,8 +77,8 @@ section#main-page #navbar {
 #main-page .main-page-background {
 	display:block;
 	position:relative;
-	height:80%;
-	min-height:600px;
+	height:70%;
+	min-height:500px;
 	background-image:url(../images/main-splash.jpg);
 	background-attachment:fixed;
 	background-position:top center;
@@ -97,7 +105,20 @@ section#main-page #navbar {
 	opacity:0;
 }
 
+/* Our Story */
+#our-story {
+	height:2000px !important;
+	background-color:#E99B9F;
+}
+#our-story h1 {
+	color:#FFF0AA;
+	text-align:center;
+}
+
 /* Photo slider CSS */
+#photos h1 {
+	color:#2FA7FC;
+}
 .jcarousel-wrapper {
 	position:relative;
 	margin:0 auto;
@@ -202,13 +223,23 @@ section#main-page #navbar {
 	height:18px;
 	width: 18px;
 	background: #fff;
-	color: #4E443C;
+	color: #000000;
 	border-radius: 18px;
 	padding: 3px;
 	text-align: center;
 	margin-right: 5px;
 	opacity: .75;
+	font-style:normal;
 }
 .jcarousel-pagination a.active {
-	background:#71B1FF;
+	background:#2FA7FC;
+}
+
+/* Wedding Details */
+#wedding-details {
+	background-color:#2FA7FC;
+}
+
+#wedding-details h1 {
+	color:#FFFFFF;
 }
