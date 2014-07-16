@@ -289,7 +289,7 @@ section#main-page #navbar {
 #wedding-details h1 {
 	color:#4DE0FF;
 }
-#wedding-details .grid-5 {
+#wedding-details .grid-6 {
 	margin-left:8%; 
 	margin-top:50px;
 	height:400px;
@@ -299,11 +299,13 @@ section#main-page #navbar {
   border: 1px solid rgba(0,0,0,.2);
   box-shadow(0 1px 3px rgba(0,0,0,.1));
 }
-#wedding-details .grid-6 {
+#wedding-details .grid-5 {
 	margin-top:50px;
 	padding:0 30px;
+	height:400px;
+	overflow:hidden;
 }
-#wedding-details .grid-6 h2 {
+#wedding-details .grid-5 h2 {
 	text-align:left;
 	font-style:normal;
 	margin:0;
@@ -312,12 +314,30 @@ section#main-page #navbar {
 	font-weight:100;
 	color:#FFC11F;
 }
-#wedding-details .grid-6 h3 {
+#wedding-details .grid-5 h3 {
 	font-style:italic;
 	font-weight:100;
 	margin:0;
+	margin-bottom:50px;
 }
 #wedding-details #map-canvas {
 	height:100%;
 	width:100%;
+}
+#wedding-details .btn-container {
+	width:80%;
+	margin:0 auto;
+}
+#wedding-details .more-info-btn {
+	position:relative;
+	float:left;
+	height:50px;
+	width:23%;
+	line-height:50px;
+	text-align:center;
+	background-color:#FFC11F;
+	border:1px solid #000000;
+	border-radius:5px;
+	cursor:pointer;
+	margin:0 1%;
 }
