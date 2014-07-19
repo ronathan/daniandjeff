@@ -46,4 +46,16 @@ $(function(){
       $(this).removeClass('active');
   }).jcarouselPagination();
 
+  // Wedding Details More Info Nav
+  $('.info-nav li').click(function() {
+  	var $this = $(this);
+  	if(!$this.hasClass('active')) {
+	  	$('.info-nav li').removeClass('active');
+	  	$this.addClass('active');
+
+	  	$('#wedding-details .more-info-content .content-item').fadeOut(100);
+	  	$('#content' + $this.attr('data-contentitem')).delay(100).fadeIn(100);
+  	}
+  });
+
 });

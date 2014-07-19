@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/icomoon.css" media="screen"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
 	<link href='http://fonts.googleapis.com/css?family=Mako' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
@@ -84,7 +84,7 @@
 
 		</section>
 
-		<section id="wedding-details" class="grid-container">
+		<section id="wedding-details" class="grid-container" style="height:auto !important;">
 			<h1>
 				Wedding Details
 			</h1>
@@ -95,32 +95,227 @@
 			</div>
 
 			<div class="grid-5">
-				<img src="images/home2.png"/><h2>Seligman Cabin</h2>
+				<h2><span class="icon-home" style="font-size:0.8em;"></span> Seligman Cabin</h2>
 				<h3>Ceremony @ 5:30 in the evening.</h3>
 
-				<h2>Craigleith Ski Club</h2>
+				<h2><span class="icon-food" style="font-size:0.8em;"></span> Craigleith Ski Club</h2>
 				<h3>Dinner and dancing to follow.</h3>
 
-				<h2>Hotels</h2>
+				<h2><span class="icon-office" style="font-size:0.8em;"></span> Hotels</h2>
 				<h3>Find a place to stay.</h3>
 
-				<h2>Things to Do</h2>
+				<h2><span class="icon-dice" style="font-size:0.8em;"></span> Things to Do</h2>
 				<h3>Places to see while you're in town!</h3>
 
 			</div>
 
 			<div class="grid-12" style="margin:0 auto;">
-				<h1>But wait! There's more!</h1>
-				<div class="btn-container clearfix" style="float:none;">
-					<div class="more-info-btn">Hotels Info</div>
-					<div class="more-info-btn">Pool Party</div>
-					<div class="more-info-btn">Dress Code</div>
-					<div class="more-info-btn">In Case of Rain</div>
+
+				<h1 id="butwaittheresmore">But wait! There's more!</h1>
+				<nav>
+					<ul class="info-nav">
+						<li class="active" data-contentitem="1">Hotels Info</li>
+						<li data-contentitem="2">Pool Party</li>
+						<li data-contentitem="3">Dress Code</li>
+						<li data-contentitem="4">Rain</li>
+						<li data-contentitem="5">Transport</li>
+					</ul>
+				</nav>
+
+				<div class="more-info-content">
+
+					<div id="content1" class="content-item" style="display:block; font-size:1em;">
+						<div class="hotel-row" style="padding:50px 100px;">
+							<h3 style="text-align:center; font-size:1.6em; margin-top:0px;">PLEASE READ!</h3>
+							We've made arrangements with 4 hotels in the area to host our wedding guests the night, or weekend, of August 31st.<br/><br/>
+
+							A wide variety of rooms are available to suit your specific needs. We encourage you to make reservations as early as possible, as this is a long weekend and area hotels are already quickly booking up.<br/><br/>
+
+							All hotels have a check-in time of 4:00PM and check-out time of 11:00AM. Early check-in and late check-out can be requested, but no guarantees can be made regarding availability.<br/><br/>
+
+							Of course, should the option be available for the weekend, you could also look into booking a cottage in the area - which would help reduce costs distributed amongst a group of people.<br/><br/>
+
+							More details will be made available in due time, but know that buses will be available to transport guests to and from our wedding venue the night of August 31st.
+						</div>
+						<div class="hotel-row">
+							<div class="hotel-info">
+								<h3>1. BLUE MOUNTAIN RESORT</h3>
+
+								108 Jozo Weider Blvd. <br/>
+								Blue Mountains, ON L9Y 3Z2 <br/>
+
+								A 2 night minimum stay applies. Use group name and group code for all bookings for 10% discount on all rates.<br/><br/>
+
+								<span class="bolditalicize">Group Name:</span> Seligman & Bernstein Wedding Accom <br/>
+								<span class="bolditalicize">Group Code:</span> GRP108990 <br/><br/>
+
+								<span class="bolditalicize">Online:</span> 
+								<a href="https://lodging.bluemountain.ca/booking/#availability" target="_blank">
+									https://lodging.bluemountain.ca/booking/#availability
+								</a><br/>
+								<span class="bolditalicize">Phone:</span> 1-877-445-0231<br/><br/>
+								 
+								<span class="bolditalicize">Room Rates:</span><br/><br/>
+
+								Blue Mountain Inn-Resort Rooms: $159<br/>
+								Village Suites (Studio to Three Bedrooms): $179-$469<br/>
+								Mosaic Suites (Studio to Three Bedrooms): $209-$599<br/><br/>
+
+								All above rates are subject to 13% HST and 2% Village Amenity Fee per unit per night.
+							</div>
+
+							<div class="hotel-info">
+								<h3>2. CRANBERRY RESORT</h3>
+
+								19 Keith Ave.<br/>
+								Collingwood, ON L9Y 4T9<br/><br/>
+
+								Bookings can be made for 1 or 2 nights. Rooms have been held under group name, "Seligman-Bernstein Wedding Block".<br/><br/><br/>
+
+								<span class="bolditalicize">Online:</span> 
+								<a href="http://www.thecranberryresort.com/accommodations/cranberry-hotel-room" target="_blank">
+									http://www.thecranberryresort.com/accommodations/cranberry-hotel-room
+								</a><br/>
+								<span class="bolditalicize">Phone:</span> 1-800-465-9077<br/><br/>
+
+								<span class="bolditalicize">Room Rates:</span><br/><br/>
+
+								Standard room (2 doubles or 2 queens): $155<br/>
+								One bedroom condos (max. 3 people): $240 (available @ Living Water, sister resort)<br/><br/>
+
+								All above rates subject to 13% HST per unit per night.
+							</div>
+						</div>
+						<div class="hotel-row">
+							<div class="hotel-info">
+								<h3>3. WESTIN BLUE MOUNTAIN (no discount)</h3>
+
+								220 Gord Canning Dr. (Formerly Mountain Drive)<br/>
+								Blue Mountains, ON L9Y 0V9<br/><br/>
+
+								There is no group room block, and no special discount available to guests. 2 night minimum stay applies.<br/><br/>
+
+								<span class="bolditalicize">Online:</span> 
+									<a href="http://www.westin.com/bluemountain" target="_blank">
+										http://www.westin.com/bluemountain
+									</a><br/>
+								<span class="bolditalicize">Phone:</span> 1-866-837-4192<br/><br/>
+								 
+								<span class="bolditalicize">Room Rates (prepaid, non-refundable): </span><br/><br/>
+
+								Deluxe Guestroom: $349<br/>
+								One Bedroom Suite: $389<br/>
+								Two Bedroom Suite: $709<br/>
+								Three Bedroom Suite: $959<br/><br/>
+
+								All above rates are subject to 13% HST and 2.26% Village Amenity Fee per unit per night<br/><br/>
+								 
+								Room Descriptions<br/><br/>
+
+								Deluxe Guestroom: Queen bed & double sofa bed with kitchenette, fireplace & French balcony<br/><br/>
+
+								One Bedroom Suite: Queen bed in master bedroom and queen sofa bed in the living area with a kitchenette, fireplace and full balcony.<br/><br/>
+
+								Two Bedroom Suite: King bed in the master bedroom, queen bed in the second bedroom, queen sofa bed in the living area with a full kitchen, fireplace and full balcony. Please note that each bedroom has its own bathroom connected to it.<br/><br/>
+
+								Three Bedroom: King bed in the master bedroom, queen bed in the second bedroom, queen bed in the third bedroom, queen sofa bed in the living area. Full kitchen, fireplace and full balcony. Please note that the master bedroom has its own bathroom connected to it and the other two bedrooms share a bathroom.
+							</div>
+
+							<div class="hotel-info">
+								<h3>4. DAYS INN</h3>
+
+								15 Cambridge St<br/>
+								Collingwood, ON L9Y 0A2<br/><br/>
+
+								<span class="bolditalicize">Phone:</span> 1-705-444-1880<br/><br/>
+
+								<span class="bolditalicize">Room Rates:</span><br/><br/>
+
+								Rooms featuring 1 king bed: $134.95<br/>
+								Rooms featuring 2 queen size beds: $144.95<br/>
+								Junior suites featuring 2 queen size beds, a pull out sofa, a mini fridge and microwave: $159.95<br/><br/>
+
+								All above rates are subject to 13% HST per unit per night. Bookings may also be made at the further discounted CAA rate if a card is provided upon arrival.<br/><br/>
+
+								Amenities
+								<ul>
+									<li>Complimentary continental breakfast</li>
+									<li>complimentary high-speed internet access</li>
+									<li>in room coffee maker</li>
+									<li>hair dryer</li>
+									<li>indoor salt-water pool, hot tub, fitness centre</li>
+									<li>24-hr business centre</li>
+								</ul>
+
+								<span class="bolditalicize">Cancellation policy:</span> 7 days prior to arrival date before 4pm
+								Cut off date to book from the block with special rate: July 18, 2014.
+							</div>
+						</div>
+					</div>
+
+					<div id="content2" class="content-item">
+						<h3 style="text-align:center;">Bring Your Own Towel<br/>Pool Party!</h3>
+						Join us poolside for sun, snacks & swim.<br/><br/>
+
+						<span class="bold">Monday September 1st</span><br/>
+						11AM - 3PM<br/>
+						130 Sleepy Hollow Road<br/>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2844.639070098277!2d-80.33042909999999!3d44.522545799999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882a76d053ed97c5%3A0xd66c3e39a622db9b!2s130+Sleepy+Hollow+Rd%2C+Blue+Mountains%2C+ON+L9Y+0S2!5e0!3m2!1sen!2sca!4v1405808470031" width="400" height="250" frameborder="0" style="border:1px solid #FFC11F; margin-top:30px;"></iframe>
+					</div>
+
+
+					<div id="content3" class="content-item">
+
+						<div style="max-width:500px; margin:50px auto;">
+							<h3>Country Cocktail</h3>
+							Many have asked what we mean by "country cocktail". <br/><br/>
+
+							<span class="bolditalicize">For ladies,</span> it's probably a bit easier to define: sun dresses, floral or summery prints, pastels, etc.<br/><br/>
+
+							<span class="bolditalicize">For gents,</span> it's easier to define by what not to wear: no tuxes, no black suits (if possible), ties optional.<br/><br/>
+
+							Basically we want you to have fun with the dress code; dress stylishly yet comfortably. Greys and blues will look great. Try checks or plaids. Rock a pair of loafers. Bonus points from the bride for anyone who can pull off a bolo tie and/or cowboy boots.
+						</div>
+					</div>
+
+					<div id="content4" class="content-item">
+						<div style="max-width:500px; margin:50px auto;">
+							
+							<h3>In case of severe weather...</h3>
+							The ceremony will be at Craigleith Ski Club, 164 Craigleith Road.
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2844.9000856302796!2d-80.3308818!3d44.5171999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882a76d2f1aeffa7%3A0xb93fafd85654ec2e!2s164+Craigleith+Rd%2C+Blue+Mountains%2C+ON+L9Y+0S3!5e0!3m2!1sen!2sca!4v1405811455330" width="400" height="250" frameborder="0" style="border:1px solid #FFC11F; margin-top:30px;"></iframe>
+
+						</div>
+					</div>
+
+					<div id="content5" class="content-item">
+						<div style="max-width:500px; margin:50px auto;">
+							<h3>Transportation</h3>
+							
+							For those who do not wish to drive between the ceremony and reception, there will be transportaton at the Craigleith Sku Club Parking Lot for a short ride to and from the ceremony.<br/><br/>
+							For those woh do not wish to drie at all, our shuttle will also pick up from the lobby at four designated locations.<br/><br/>
+							
+							<span class="bold">Please be on time to board promptly.</span><br/><br/>
+							Cranberry Inn: 4:15PM<br/>
+							Westin: 4:30PM<br/>
+							Blue Mountain Inn: 4:40PM<br/>
+							Craigleith 4:45PM<br/><br/>
+
+							Please indicate if you plan tiyse this pickup service and from which location when you RSVP.<br/><br/>
+
+							Returns will be staggered at the end of the evening.<br/><br/>
+
+							On the wedding day, our emergency/info contact is Gloria Benaim: 416.566.7355
+						</div>
+					</div>	
+
 				</div>
+
 			</div>
 		</section>
 
-		<!-- <section id="rsvp" class="grid-container">
+<!-- 		<section id="rsvp" class="grid-container">
 		</section>
 
 		<section id="registry" class="grid-container">
@@ -129,11 +324,9 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/jcarousel.js"></script>
 	<script src="js/main.js"></script>
-
 	<script src="https://maps.google.com/maps/api/js?v=3.5&amp;sensor=false"></script>
 	<script src="js/maps.js"></script>
 

@@ -20,8 +20,21 @@ body {
 	font-family: Linux Biolinum;
 	font-weight:400;
 	font-style:normal;
+	color:#6B6B6B;
 	top:0;
 	left:0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+a {
+	color:#6B6B6B;
+  -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+a:hover {
+	color:#000000;
 }
 h1 {
 	position:relative;
@@ -101,9 +114,13 @@ section#main-page #navbar {
 	font-size:1em;
 	font-weight:200;
 	line-height:30px;
+  -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
 #navbar ul li:hover {
-	color:#E6E6E6;
+	color:#000000;
 }
 #main-page .main-page-background {
 	display:block;
@@ -127,7 +144,7 @@ section#main-page #navbar {
 	width:100%;
 	top:0;
 	left:0;
-	background-color:rgba(255,255,255, 0.6);
+	background-color:rgba(255,255,255, 0.2);
 }
 .main-page-text {
 	position:absolute; 
@@ -324,20 +341,96 @@ section#main-page #navbar {
 	height:100%;
 	width:100%;
 }
-#wedding-details .btn-container {
-	width:80%;
-	margin:0 auto;
+#butwaittheresmore {
+	text-decoration:none; 
+	margin:30px;"
 }
-#wedding-details .more-info-btn {
+#butwaittheresmore:after {
+	border:none;
+}
+#wedding-details nav {
+	width:100%;
+}
+#wedding-details .info-nav {
+	height:50px;
+	width:60%;
+	display:block;
+	margin:0 auto;
+	padding:0;
+	list-style:none;
+}
+#wedding-details .info-nav li {
 	position:relative;
 	float:left;
 	height:50px;
-	width:23%;
+	width:19%;
 	line-height:50px;
 	text-align:center;
-	background-color:#FFC11F;
-	border:1px solid #000000;
-	border-radius:5px;
+	background-color:#FFFFFF;
+	border:1px solid #FFC11F;
 	cursor:pointer;
-	margin:0 1%;
+	margin:0 0.5%;
+	color:#FFC11F;
+	font-style:italic;
+  -webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+}
+#wedding-details .info-nav li.active {
+	background-color:#FFC11F;
+	color:#FFFFFF;
+	/*bottom-border:1px solid #FFFFFF;*/
+}
+#wedding-details .more-info-content{
+	position:relative;
+	height:500px;
+	width:80%;
+	padding:50px;
+	margin:0 auto;
+	margin-top:-1px;
+	border:1px solid #FFC11F;
+	color:#6B6B6B;
+	overflow-y:scroll;
+}
+#wedding-details .more-info-content .content-item {
+	display:none;
+	font-size:1.2em;
+}
+#wedding-details .more-info-content .hotel-row { 
+	display:table;
+	width:100%;
+	height:auto;
+	border:1px solid #FFC11F;
+	margin-bottom:10px;
+}
+#wedding-details .more-info-content .hotel-info {
+	display:table-row;
+	float:left;
+	padding:20px;
+	width:50%;
+	word-wrap:break-word;
+}
+/*#wedding-details .more-info-content .hotel-info:first-child {
+	border-right:1px solid #FFC11F;
+}*/
+#wedding-details .more-info-content .hotel-info h3 {
+	color:#1F1F1F;
+}
+.bolditalicize {
+	font-style:italic;
+	font-weight:700;
+	color:#1F1F1F;
+}
+.bold {
+	font-weight:700;
+}
+#content2, #content4, #content5 {
+	text-align:center;
+}
+#content2 h3, #content3 h3, #content4 h3, #content5 h3 {
+	text-align:center;
+	font-size:2em;
+	font-style:italic;
+	margin-top:0px;
 }
