@@ -44,7 +44,6 @@ h1 {
 	margin-bottom:20px;
   font-weight:300;
   text-align:center;
-	padding-top:50px;
 }
 h2 {
 	font-size:2em;
@@ -53,7 +52,8 @@ h2 {
 }
 section {
 	/* Adds padding to top for navbar */
-	padding-top:50px;
+	padding:50px 0px;
+	margin:30px 0 !important;
 }
 section#main-page {
 	position:relative;
@@ -102,7 +102,7 @@ section#main-page #navbar {
 #navbar ul li {
 	float:left;
 	height:30px;
-	width:20%;
+	width:25%;
 	cursor:pointer;
 	font-family:"Coneria Script";
 	text-align:center;
@@ -160,6 +160,8 @@ section#main-page #navbar {
 #our-story {
 	height:1000px !important;
 	background-color:#FFF0FA;
+	border-top:1px solid #FF7FA9;
+	border-bottom:1px solid #FF7FA9;
 }
 #our-story h1 {
 	/*color:#FFF0AA;*/
@@ -295,7 +297,7 @@ section#main-page #navbar {
 #wedding-details {
 	/*background-color:rgba(42,191,255, 0.3);*/
 	/*background-color:#D9F2FD;*/
-	background-color:#FFFFFF;
+	background-color:#FFFFF0;
 }
 
 #wedding-details h1 {
@@ -337,10 +339,10 @@ section#main-page #navbar {
 	height:100%;
 	width:100%;
 }
-#butwaittheresmore {
+/*#butwaittheresmore {
 	text-decoration:none; 
-	margin:30px;"
-}
+	margin:30px;
+}*/
 #butwaittheresmore:after {
 	border:none;
 }
@@ -436,28 +438,49 @@ section#main-page #navbar {
 #rsvp {
 	/*background-color:#FFFFE6;*/
 }
-#rsvp h1 {
-	color:#3CE0FF;
+#rsvp-gifts h1 {
+	color:#F5CA10;
 }
-#rsvp h2 {
-	color:#4DE0FF;
+#rsvp-gifts h2 {
+	color:#FAD700;
 }
-#rsvp .rsvp-information {
-	width:50%; 
+#rsvp-gifts .rsvp-information {
+	width:100%; 
 	min-width:500px; 
 	margin:0 auto; 
 	margin-top:50px;
 	text-align:center;
 }
-#rsvp .rsvp-information p {
+#rsvp-gifts .rsvp-information p {
 	font-size:1.2em;
+	color:#B3ABA8;
+	margin-top:30px;
 }
-#registry .hudsons-bay-logo {
-	width:500px;
+#rsvp-gifts .rsvp-information p .bolditalicize {
+	color:#B3ABA8;
+}
+#rsvp-gifts .hudsons-bay-logo {
+	width:450px;
 	height:65px;
 	margin:0 auto;
 	margin-top:50px;
-	border:1px solid #000000;
-	padding:20px 60px;
+	border:1px solid #B3ABA8;
+	background-color:#FFFFF8;
+	padding:20px 35px;
 	cursor:pointer;
+}
+#rsvp, #gifts {
+	height:auto;
+	padding:30px 0px;
+	background-color:#FFFFF0;
+}
+#gifts {
+	background-color:#FFEFEF;
+	margin-top:30px;
+}
+#gifts h1 {
+	color:#ED6C17;
+}
+#gifts h2 {
+	color:#F5890C;
 }
