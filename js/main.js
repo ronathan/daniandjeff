@@ -6,21 +6,31 @@ $(function(){
 
 	$ourStory.waypoint(function(direction) {
 		if(direction == "down") {
-			$navbar.animate({opacity: "1"}, 200, "easeInOutExpo");
+			$navbar.css("position", "fixed");
+			// $navbar.animate({opacity: "1"}, 200, "easeInOutExpo");
 		} else {
-			$navbar.animate({opacity: "0"}, 200, "easeInOutExpo");
+			$navbar.css("position", "relative");
+			// $navbar.animate({opacity: "0"}, 200, "easeInOutExpo");
 		}
-	}, { offset:100 });
+	}, { offset:120 });
 
 	// Navbar Scroll Animations
 	$('#navbar ul li').click(function() {
 		var $section = $('section');
 		var currentLink = $(this).attr('data-sectionNumber');
-		$('body').stop().animate( { scrollTop : $section.eq( currentLink ).offset().top }, 650, 'easeInOutExpo');
+		$('body').stop().animate( { scrollTop : ( $section.eq( currentLink ).offset().top - 50) }, 650, 'easeInOutExpo');
 	});
 
+	// Causes Main Page Text to fade in on entry
 	$('.main-page-text').css('opacity', '1');
-	$('.main-page-text').addClass('fadeInUp');
+	$('.main-page-text').addClass('animated fadeInUp');
+
+	$navbar.addClass('animated fadeInUp');
+	$navbar.css('opacity', '1');
+
+	setTimeout(function() {
+		$('body').css("overflow", "visible");
+	}, 4500);
 
 	// Image Slider for Wedding Photos
 
@@ -47,15 +57,15 @@ $(function(){
   }).jcarouselPagination();
 
   // Wedding Details More Info Nav
-  $('.info-nav li').click(function() {
-  	var $this = $(this);
-  	if(!$this.hasClass('active')) {
-	  	$('.info-nav li').removeClass('active');
-	  	$this.addClass('active');
+  // $('.info-nav li').click(function() {
+  // 	var $this = $(this);
+  // 	if(!$this.hasClass('active')) {
+	 //  	$('.info-nav li').removeClass('active');
+	 //  	$this.addClass('active');
 
-	  	$('#wedding-details .more-info-content .content-item').fadeOut(100);
-	  	$('#content' + $this.attr('data-contentitem')).delay(100).fadeIn(100);
-  	}
-  });
+	 //  	$('#wedding-details .more-info-content .content-item').fadeOut(100);
+	 //  	$('#content' + $this.attr('data-contentitem')).delay(100).fadeIn(100);
+  // 	}
+  // });
 
 });

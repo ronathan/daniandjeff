@@ -23,6 +23,7 @@ body {
 	color:#6B6B6B;
 	top:0;
 	left:0;
+	overflow:hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -53,14 +54,15 @@ h2 {
 section {
 	/* Adds padding to top for navbar */
 	padding:50px 0px;
-	margin:30px 0 !important;
+	margin:0 0 30px 0 !important;
 }
 section#main-page {
 	position:relative;
 	height:100%;
 	top:0;
 	left:0;
-	padding-top:0px;
+	margin:0;
+	padding:0;
 }
 section#main-page h1 {
 	font-size:5em;
@@ -85,17 +87,31 @@ section#main-page #navbar {
 	height:50px;
 }
 #navbar {
+	position:relative;
 	width:100%;
 	background-color:rgba(255,255,255, 0.9);
+	border-top:1px solid #B2B2B2;
 	border-bottom:1px solid #B2B2B2;
+	margin-top:10px;
+	top:0;
 	z-index:10;
 	opacity:0;
+
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
 }
 #navbar ul {
 	list-style: none;
 	margin:0 auto;
 	padding:0;
-	padding-top:20px;	
+	padding-top:10px;	
 	height:100%;
 	width:80%;
 }
@@ -139,14 +155,13 @@ section#main-page #navbar {
 	width:100%;
 	top:0;
 	left:0;
-	background-color:rgba(255,255,255, 0.2);
+	background-color:rgba(255,255,255, 0.1);
 }
 .main-page-text {
 	position:absolute; 
 	width:100%; 
 	height:auto; 
-	padding:20px;
-	padding-top:40px;
+	padding:20px 0;
 	bottom:40px; 
 	color:#363636;
 	background-color:rgba(255,255,255, 0.5); 
@@ -154,14 +169,22 @@ section#main-page #navbar {
 	border-top:1px solid #B2B2B2;
 	border-bottom:1px solid #B2B2B2;
 	opacity:0;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 /* Our Story */
 #our-story {
-	height:1000px !important;
+	height:200px !important;
 	background-color:#FFF0FA;
-	border-top:1px solid #FF7FA9;
-	border-bottom:1px solid #FF7FA9;
+	min-height:0;
 }
 #our-story h1 {
 	/*color:#FFF0AA;*/
@@ -171,7 +194,7 @@ section#main-page #navbar {
 
 /* Photo slider CSS */
 #photos {
-	background-color:#EAFFFF;
+	background-color:#EFFFFF;
 }
 #photos h1 {
 	color:#00B1B0;
@@ -179,8 +202,8 @@ section#main-page #navbar {
 .jcarousel-wrapper {
 	position:relative;
 	margin:0 auto;
-	height:520px;
-	width:353px;
+	height:580px;
+	width:395px;
   background-color:#FFF;
   border:1px solid #EFEFEF;
   padding:10px;
@@ -191,8 +214,8 @@ section#main-page #navbar {
 .jcarousel-wrapper .jcarousel {
   position: absolute;
   overflow: hidden;
-  height:500px;
-  width:333px;
+  height:560px;
+  width:373px;
 }
 .jcarousel-wrapper .jcarousel ul {
   position: relative;
@@ -205,8 +228,8 @@ section#main-page #navbar {
 .jcarousel-wrapper .jcarousel ul li {
 	position:relative;
 	float: left;
-	height:500px;
-	width:333px;
+	height:560px;
+	width:373px;
 	background-repeat:no-repeat;
 	background-size:cover;
 }
@@ -259,19 +282,21 @@ section#main-page #navbar {
 	left:-60px;
 	margin-top:-25px;
 	background-image:url(../images/icon-arrow-left.png);
+	background-color:transparent;
 }
 .jcarousel-wrapper #right-slider-arrow {
 	top:50%;
 	right:-60px;
 	margin-top:-25px;
 	background-image:url(../images/icon-arrow-right.png);
+	background-color:transparent;
 }
 .jcarousel-pagination {
 	position:absolute;
-	width:276px;
+	width:253px;
 	bottom:20px;
 	left:50%;
-	margin-left:-133px;
+	margin-left:-126px;
 }
 .jcarousel-pagination a {
 	text-decoration: none;
@@ -297,7 +322,7 @@ section#main-page #navbar {
 #wedding-details {
 	/*background-color:rgba(42,191,255, 0.3);*/
 	/*background-color:#D9F2FD;*/
-	background-color:#FFFFF0;
+	background-color:#FFFFEC;
 }
 
 #wedding-details h1 {
@@ -328,12 +353,16 @@ section#main-page #navbar {
 	font-size:2em;
 	font-weight:100;
 	color:#FFC11F;
+	cursor:pointer;
+}
+#wedding-details .grid-5 h2.focus {
+	color:#000;
 }
 #wedding-details .grid-5 h3 {
 	font-style:italic;
 	font-weight:100;
 	margin:0;
-	margin-bottom:50px;
+	margin-bottom:28px;
 }
 #wedding-details #map-canvas {
 	height:100%;
@@ -343,10 +372,10 @@ section#main-page #navbar {
 	text-decoration:none; 
 	margin:30px;
 }*/
-#butwaittheresmore:after {
+/*#butwaittheresmore:after {
 	border:none;
-}
-#wedding-details nav {
+}*/
+/*#wedding-details nav {
 	width:100%;
 }
 #wedding-details .info-nav {
@@ -357,44 +386,45 @@ section#main-page #navbar {
 	margin:0 auto;
 	padding:0;
 	list-style:none;
-}
-#wedding-details .info-nav li {
+}*/
+/*#wedding-details .info-nav li {*/
+#wedding-details .info-title {
 	position:relative;
-	float:left;
-	height:50px;
-	width:19%;
+	height:65px;
+	width:80%;
 	min-width:105px;
-	line-height:50px;
+	line-height:65px;
 	text-align:center;
-	background-color:#FFFFFF;
+	background-color:#FFC11F;
 	border:1px solid #FFC11F;
 	cursor:pointer;
-	margin:0 0.5%;
-	color:#FFC11F;
+	margin:0 auto;
+	margin-top:50px;
+	color:#FFFFFF;
+	font-size:32px;
 	font-style:italic;
   -webkit-transition: all .1s ease;
 	-moz-transition: all .1s ease;
   -o-transition: all .1s ease;
   transition: all .1s ease;
 }
-#wedding-details .info-nav li.active {
+/*#wedding-details .info-nav li.active {
 	background-color:#FFC11F;
 	color:#FFFFFF;
-	/*bottom-border:1px solid #FFFFFF;*/
-}
+	bottom-border:1px solid #FFFFFF;
+}*/
 #wedding-details .more-info-content{
 	position:relative;
-	height:500px;
+	height:auto;
 	width:80%;
 	padding:50px;
 	margin:0 auto;
 	margin-top:-1px;
 	border:1px solid #FFC11F;
 	color:#6B6B6B;
-	overflow-y:scroll;
+	background-color:#FFFFFF;
 }
 #wedding-details .more-info-content .content-item {
-	display:none;
 	font-size:1.2em;
 }
 #wedding-details .more-info-content .hotel-row { 
@@ -402,7 +432,8 @@ section#main-page #navbar {
 	width:100%;
 	height:auto;
 	border:1px solid #FFC11F;
-	margin-bottom:10px;
+	margin-bottom:50px;
+	/*background-color:#FFFFFF;*/
 }
 #wedding-details .more-info-content .hotel-info {
 	display:table-row;
@@ -435,35 +466,35 @@ section#main-page #navbar {
 	margin-top:0px;
 }
 
-#rsvp {
+#rsvp-gifts {
 	/*background-color:#FFFFE6;*/
+	padding:0;
 }
 #rsvp-gifts h1 {
-	color:#F5CA10;
+	color:#3AE0FF;
 }
 #rsvp-gifts h2 {
-	color:#FAD700;
+	color:#5DE0FF;
 }
 #rsvp-gifts .rsvp-information {
 	width:100%; 
 	min-width:500px; 
 	margin:0 auto; 
-	margin-top:50px;
+	margin-top:30px;
 	text-align:center;
 }
 #rsvp-gifts .rsvp-information p {
 	font-size:1.2em;
-	color:#B3ABA8;
+	color:#454545;
 	margin-top:30px;
 }
 #rsvp-gifts .rsvp-information p .bolditalicize {
-	color:#B3ABA8;
+	color:#454545;
 }
 #rsvp-gifts .hudsons-bay-logo {
 	width:450px;
 	height:65px;
-	margin:0 auto;
-	margin-top:50px;
+	margin:30px auto;
 	border:1px solid #B3ABA8;
 	background-color:#FFFFF8;
 	padding:20px 35px;
@@ -472,7 +503,9 @@ section#main-page #navbar {
 #rsvp, #gifts {
 	height:auto;
 	padding:30px 0px;
-	background-color:#FFFFF0;
+}
+#rsvp {
+	background-color:#F1FBFF;
 }
 #gifts {
 	background-color:#FFEFEF;
