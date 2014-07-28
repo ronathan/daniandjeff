@@ -79,8 +79,8 @@ $(function(){
 	$navbar.css('opacity', '1');
 
 	setTimeout(function() {
-		$('body').css("overflow", "visible");
-	}, 4500);
+		$('body').css("overflow-y", "visible");
+	}, 3000);
 
 	// Image Slider for Wedding Photos
 
