@@ -21,6 +21,56 @@ $(function(){
 		$('body').stop().animate( { scrollTop : ( $section.eq( currentLink ).offset().top - 50) }, 650, 'easeInOutExpo');
 	});
 
+	var $ourStoryItem = $("#our-story").find(".our-story-item");
+
+	// Animates the bubble on scroll
+	function animateStoryItem($ourStoryItem) {
+		if ($ourStoryItem.css("opacity") == 0) {
+			var $heading = $ourStoryItem.find("h2"),
+			$image = $ourStoryItem.find(".our-story-img"),
+			$description = $ourStoryItem.find("p"),
+			$h3 = $ourStoryItem.find("h3"),
+			$storyArrow = $ourStoryItem.find("img.story-arrow");
+
+			// Show the story item
+			$ourStoryItem.css("opacity", 1);
+
+			//Animate header
+			$heading.addClass("bounceInUp");
+
+
+			if( $ourStoryItem.hasClass("spinposal") ) {
+				$image.addClass("bounceInLeft");
+				$description.addClass("bounceInRight");
+			} else {
+				$image.addClass("bounceInUp");
+				$description.addClass("bounceIn");
+			}
+
+			if( $ourStoryItem.hasClass("arrowAnimation") ) {
+				if( $ourStoryItem.hasClass("right") ) {
+					$h3.addClass("bounceInRight");
+					$storyArrow.addClass("bounceInRight");
+				} else {
+					$h3.addClass('bounceInLeft');
+					$storyArrow.addClass('bounceInLeft');
+					$('img#circle-jeff').addClass('bounceIn');
+				}
+			}
+
+		}
+	}
+
+	// Sets up waypoint on bubble
+	$ourStoryItem.waypoint({
+		handler: function() {
+			animateStoryItem($(this));
+		},
+		offset: function() {
+    	return $(window).height() * 0.7;
+    }
+	});
+
 	// Causes Main Page Text to fade in on entry
 	$('.main-page-text').css('opacity', '1');
 	$('.main-page-text').addClass('animated fadeInUp');
