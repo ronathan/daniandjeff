@@ -94,15 +94,15 @@ section#main-page #navbar {
 	z-index:10;
 	opacity:0;
 
-	-webkit-animation-delay: 3s;
-	-moz-animation-delay: 3s;
-  -o-animation-delay: 3s;
-  animation-delay: 3s;
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
 
-	-webkit-animation-duration: 2s;
-	-moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
 }
 #navbar ul {
 	list-style: none;
@@ -171,10 +171,10 @@ section#main-page #navbar {
   -o-animation-delay: 1s;
   animation-delay: 1s;
 
-	-webkit-animation-duration: 2s;
-	-moz-animation-duration: 2s;
-  -o-animation-duration: 2s;
-  animation-duration: 2s;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
 }
 .main-page-text img {
 	height:30px;
@@ -242,6 +242,10 @@ section#main-page #navbar {
 	top:50px; 
 	right:-303px; 
 	width:250px;	
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
 }
 #our-story #yupThatsJeff {
 	top:172px; 
@@ -261,6 +265,10 @@ section#main-page #navbar {
 	top:75px;
 	right:-50px;
 	width:200px;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
 }
 #our-story #curved-arrow-down-right {
 	top: 203px; 
